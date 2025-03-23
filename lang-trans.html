@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language Translator</title>
+    <link rel="stylesheet" href="lang-trans.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <div class="con container-fluid d-flex flex-column justify-content-center">
+        <div class="con-row row">
+            <div class="con-col col-12 d-flex flex-row justify-content-center">
+
+                <div class="main-bx">
+
+                        <h1 class="heading mb-4">Language Translator</h1>
+
+                        <div class="main d-flex flex-lg-row  flex-column mb-4">
+                            <textarea rows="5" cols="30" placeholder="Enter text" id="textfrom" class="mr-2"></textarea>
+                            <textarea rows="5" cols="30" placeholder="Translation" id="textto" readonly disabled></textarea>  
+                        </div>
+
+                       <ul class="controls d-flex flex-lg-row flex-column justify-content-between mt-2">
+
+                            <p class="d-lg-none d-flex">From Controls: </p>
+                            <li class="from-controls d-flex flex-row justify-content-center mt-2 mb-2">
+                                <div class="icons mt-1 d-flex flex-row ">
+                                    <i class="from-speech fa-duotone fa-solid fa-volume-high mr-3"></i>
+                                    <i class="from-copy fa-duotone fa-solid fa-copy mr-3"></i>
+                                </div>
+                                <select class="dropdown">
+                                    <!-- <option>hindi</option>
+                                    <option>English</option> -->
+                                </select>
+                            </li>
+
+                            <li class="exchange d-none d-lg-block mt-2 mb-2"><i class="fa-solid fa-right-left"></i></li>
+
+                            <p class="d-lg-none d-flex">To Controls: </p>
+                            <li class="to-controls d-flex flex-row justify-content-center mt-2 mb-2">                               
+                                <select class="dropdown mr-3">
+                                    <!-- <option>hindi</option>
+                                    <option>English</option> -->
+                                </select>
+                                <div class="icons mt-1 d-flex flex-row ">
+                                    <i class="to-speech fa-duotone fa-solid fa-volume-high mr-3"></i>
+                                    <i class="to-copy fa-duotone fa-solid fa-copy mr-3"></i>
+                                </div>
+                            </li>
+
+                       </ul>
+
+                       <button id="translate" class="translate mx-auto">Translate</button>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="countries.js"></script>
+    <script src="lang-trans.js"></script>
+
+</body>
+</html>
